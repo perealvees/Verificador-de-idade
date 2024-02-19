@@ -11,19 +11,25 @@
 
     <section>
         <div id="dataNas">
-            <p>Digite seu ano de nascimento: <input type="number" name="dataNasc" id=""></p>
+            <p>Digite seu ano de nascimento: <input type="number" name="dataNasc" id="dataNasc" min="0"></p>
         </div>
         <div id="sexo">
             <p>
                 Qual o seu sexo? </p>
-                <input type="radio" name="Feminino" id="fem"> Feminino
-                <input type="radio" name="Masculino" id="mas"> Masculino
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                
             </p>
 
         </div>
         <div id="imagens">
-            <img src="img/homem adulto.jpg" alt="">
+            <img src="img/homem criança.png" alt="">
         </div>
+        <p>Preencha os dados para verificação</p>
+
+        <p><input id="Verificar" type="button" value="Verificar"></p>
 
     </section>
 
