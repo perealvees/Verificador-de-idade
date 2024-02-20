@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eu sei a sua idade</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Verificador de idade</title>
 </head>
 <body>
-    <h1>Vamos lá! Digite sua data de nascimento</h1>
-
+    <header>
+        <h1>Verificando sua idade</h1>
+    </header>
     <section>
-        <div id="dataNas">
-            <p>Digite seu ano de nascimento: <input type="number" name="dataNasc" id="dataNasc" min="0"></p>
-        </div>
-        <div id="sexo">
-            <p>
-                Qual o seu sexo? </p>
-                <input type="radio" name="radsex" id="fem" checked>
-                <label for="fem">Feminino</label>
+        <div>
+            <p>Digite seu ano de nascimento <input type="number" name="dataNasc" id="dataNas"></p>
+            
+            <p>Sexo:
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
-                
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
             </p>
 
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="imagens">
-            <img src="img/homem criança.png" alt="">
+
+        <div id="res">
+            Preencha os dados para gerar resultado
         </div>
-        <div id="res">Preencha os dados para verificação</div>
-
-        <p><input id="Verificar" type="button" value="Verificar" onclick="verificar()"></p>
-
     </section>
 
-   <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
